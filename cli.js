@@ -18,10 +18,10 @@ if (!options.image) {
 }
 
 if (options.file) {
-  cli.output(transform('bucharestgold/centos7-si-nodejs', fs.readFileSync(options.file)));
+  cli.output(transform(options.image, fs.readFileSync(options.file)));
 } else {
   cli.withStdin(function (data) {
-    this.output(transform('bucharestgold/centos7-si-nodejs', data));
+    this.output(transform(options.image, data));
   });
 }
 
