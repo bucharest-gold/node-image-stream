@@ -28,11 +28,13 @@ if (options.file) {
 function imageStream (name, releases) {
   const current = _.reduce(_.keys(releases), (prev, cur) => Math.max(prev, cur));
 
+  const shortName = name.split('/')[1];
+  if (!shortName) cli.fatal('Image name, with repository prefix is required');
   const data = {
     kind: 'ImageStream',
     apiVersion: 'v1',
     metadata: {
-      name: name,
+      name: shortName,
       creationTimestamp: `${new Date().toISOString()}`
     },
     spec: {
