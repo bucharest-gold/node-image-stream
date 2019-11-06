@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/bucharest-gold/node-image-stream",
   "devDependencies": {
-    "eslint": "~3.8.1",
+    "eslint": "~4.18.2",
     "eslint-config-semistandard": "~7.0.0",
     "eslint-config-standard": "~6.2.0",
     "eslint-plugin-promise": "~3.3.0",
