@@ -1,4 +1,6 @@
-## Description
+# DEPRECATED
+
+This is no longer supported.
 
 This is a simple utility that takes JSON input from 
 [`node-metadata`](https://npmjs.com/package/node-metadata), and converts it
